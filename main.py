@@ -15,9 +15,8 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.raw import functions
 
-chat = "-1001565199789"
-api_id = 16826347
-api_hash = "b97c7fb53af03754065a844335f4625e"
+api_id = Your api_id
+api_hash = "Your api_hash"
 
 app = Client("my_account", api_id=api_id, api_hash=api_hash)
 
@@ -164,7 +163,7 @@ REPLACEMENT_MAP = {
     "_": "‾",
 }
 
-# Команда type
+# Command type
 @app.on_message(filters.command("type", prefixes="."))
 def type(_, msg):
     orig_text = msg.text.split(".type ", maxsplit=1)[1]
@@ -186,7 +185,7 @@ def type(_, msg):
         except FloodWait as e:
             sleep(e.x)
  
-# Команда взлома пентагона
+# Command vzlom pentagon
 @app.on_message(filters.command("hack", prefixes="."))
 def hack(_, msg):
     perc = 0
@@ -256,7 +255,7 @@ def hacktikhon(_, msg):
  
     msg.edit("Найдени все дание Тихона!")   
 
-# Команда взлома телеграма
+# Command vzlom Telegram
 @app.on_message(filters.command("hacktg", prefixes="."))
 def hacktg(_, msg):
     perc = 0
@@ -326,41 +325,7 @@ def hackchat(_, msg):
  
     msg.edit("@MasterStroke777 имеет полное управленния етим чатом!")
 
-@app.on_message(filters.command("hackfireman", prefixes="."))
-def hackfireman(_, msg):
-    perc = 0
- 
-    while(perc < 100):
-        try:
-            text = "👮‍ Взлом @fireman_C4 аккаунта в телеграм в процессе ..." + str(perc) + "%"
-            msg.edit(text)
- 
-            perc += random.randint(1, 3)
-            sleep(0.1)
- 
-        except FloodWait as e:
-            sleep(e.x)
- 
-    msg.edit("🟢 @Fireman_C4 аккаунта успешно взломан!")
-    sleep(3)
- 
-    msg.edit("Поиск секретных данных об @Fireman_C4 ...")
-    perc = 0
- 
-    while(perc < 100):
-        try:
-            text = "Поиск секретных данных об @Fireman_C4 ..." + str(perc) + "%"
-            msg.edit(text)
- 
-            perc += random.randint(1, 5)
-            sleep(0.15)
- 
-        except FloodWait as e:
-            sleep(e.x)
- 
-    msg.edit("Найдени все дание об @Fireman_C4!")
-
-    # Команда взлома YOUTUBE
+    # Command vzlom YOUTUBE
 @app.on_message(filters.command("hackyoutube", prefixes="."))
 def hackyoutube(_, msg):
     perc = 0
@@ -395,152 +360,7 @@ def hackyoutube(_, msg):
  
     msg.edit("Тепер у каждого YouTube канала 0 подписчиков!")    
 
-    
-        # Команда взлома Глент
-@app.on_message(filters.command("hackhowdy", prefixes="."))
-def hackhowdyt(_, msg):
-    perc = 0
- 
-    while(perc < 100):
-        try:
-            text = "👮‍ Взлом телеграм канала Хауди Хо в процессе ..." + str(perc) + "%"
-            msg.edit(text)
- 
-            perc += random.randint(1, 3)
-            sleep(0.1)
- 
-        except FloodWait as e:
-            sleep(e.x)
- 
-    msg.edit("🟢 Телеграм канал Хауди Хо успешно взломан!")
-    sleep(3)
- 
-    msg.edit("Поиск секретных данных Абрахама @priler ...")
-    perc = 0
- 
-    while(perc < 100):
-        try:
-            text = "Поиск секретных данных Абрахама @priler ..." + str(perc) + "%"
-            msg.edit(text)
- 
-            perc += random.randint(1, 5)
-            sleep(0.15)
-
-        except FloodWait as e:
-            sleep(e.x)
-
-    msg.edit("@MasterStroke777 имеет полний доступ к Телеграм каналу Хауди Хо!")    
-
-
-    # Команда взлома YOUTUBE
-@app.on_message(filters.command("hackyoutube", prefixes="."))
-def hackyoutube(_, msg):
-    perc = 0
- 
-    while(perc < 100):
-        try:
-            text = "👮‍ Взлом YouTube в процессе ..." + str(perc) + "%"
-            msg.edit(text)
- 
-            perc += random.randint(1, 3)
-            sleep(0.1)
- 
-        except FloodWait as e:
-            sleep(e.x)
- 
-    msg.edit("🟢 YouTube успешно взломан!")
-    sleep(3)
- 
-    msg.edit("Поиск секретных данных пользователей YouTube ...")
-    perc = 0
- 
-    while(perc < 100):
-        try:
-            text = "Поиск секретных данных пользователей YouTube ..." + str(perc) + "%"
-            msg.edit(text)
- 
-            perc += random.randint(1, 5)
-            sleep(0.15)
- 
-        except FloodWait as e:
-            sleep(e.x)
- 
-    msg.edit("Тепер у каждого YouTube канала 0 подписчиков!")    
-
-    
-        # Команда взлома Глент
-@app.on_message(filters.command("hackglent", prefixes="."))
-def hackglent(_, msg):
-    perc = 0
- 
-    while(perc < 100):
-        try:
-            text = "👮‍ Взлом YouTube канала Глент в процессе ..." + str(perc) + "%"
-            msg.edit(text)
- 
-            perc += random.randint(1, 3)
-            sleep(0.1)
- 
-        except FloodWait as e:
-            sleep(e.x)
- 
-    msg.edit("🟢 YouTube канал Глент успешно взломан!")
-    sleep(3)
- 
-    msg.edit("Поиск секретных данных Глента ...")
-    perc = 0
- 
-    while(perc < 100):
-        try:
-            text = "Поиск секретных данных Глента ..." + str(perc) + "%"
-            msg.edit(text)
- 
-            perc += random.randint(1, 5)
-            sleep(0.15)
-
-        except FloodWait as e:
-            sleep(e.x)
-
-    msg.edit("@MasterStroke777 имеет полний доступ к YouTube каналу Глент!")    
-
-            
-        # Команда взлома Тихона
-@app.on_message(filters.command("hacktikhon", prefixes="."))
-def hacktikhon(_, msg):
-    perc = 0
- 
-    while(perc < 100):
-        try:
-            text = "👮‍ Взлом Тихона аккаунтов в процессе ..." + str(perc) + "%"
-            msg.edit(text)
- 
-            perc += random.randint(1, 3)
-            sleep(0.1)
- 
-        except FloodWait as e:
-            sleep(e.x)
- 
-    msg.edit("🟢 Тихона аккаунти успешно взломани!")
-    sleep(3)
- 
-    msg.edit("Поиск секретных данных Тихона ...")
-    perc = 0
- 
-    while(perc < 100):
-        try:
-            text = "Поиск секретных данных Тихона ..." + str(perc) + "%"
-            msg.edit(text)
- 
-            perc += random.randint(1, 5)
-            sleep(0.15)
- 
-        except FloodWait as e:
-            sleep(e.x)
- 
-    msg.edit("Найдени все дание Тихона!")   
-
-      # Команда log
-
+# Command log
 @app.on_message(filters.command("log", prefixes="."))
 def log(_, msg):
     perc = 0
